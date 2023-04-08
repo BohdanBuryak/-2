@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    float P = 0;
+    int numerator = 1;
+    int denominator = 1;
+
+    cout <<"Enter a nature number n:";
+    cin>>n;
+
+    for (int i =1;i<=n;i++){
+        numerator *=i;
+        denominator +=2;
+        P += (float)numerator/denominator;
+    }
+    cout << "P="<<P<<endl;
+    return 0;
+
+}
